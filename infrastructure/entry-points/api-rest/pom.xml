@@ -9,12 +9,12 @@
 		<relativePath>../../../pom.xml</relativePath>
 	</parent>
 
+	<packaging>jar</packaging>
 
 	<artifactId>api-rest</artifactId>
 	<version>1.0.0</version>
 	<name>api-rest</name>
 	<description>api-rest</description>
-	<packaging>jar</packaging>
 
 	<build>	</build>
 
@@ -27,6 +27,12 @@
 
 		<dependency>
 			<groupId>com.quind.sistema</groupId>
+			<artifactId>repository</artifactId>
+			<version>1.0.0</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.quind.sistema</groupId>
 			<artifactId>usecase</artifactId>
 			<version>1.0.0</version>
 		</dependency>
@@ -34,6 +40,17 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springdoc</groupId>
+			<artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
+			<version>2.3.0</version>
 		</dependency>
 
 	</dependencies>

@@ -26,7 +26,7 @@ public final class SolicitudEmpleadoController {
         }
     }
 
-    @GetMapping
+    @GetMapping("/get")
     public ResponseEntity<List<SolicitudEmpleado>> obtenerSolicitudes(
             @RequestParam(required = false) String tipoDocumento,
             @RequestParam(required = false) String numeroDocumento) {
