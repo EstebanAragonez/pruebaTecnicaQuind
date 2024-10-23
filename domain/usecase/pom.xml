@@ -18,11 +18,6 @@
 
     <dependencies>
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
             <groupId>com.quind.sistema</groupId>
             <artifactId>model</artifactId>
             <version>1.0.0</version>

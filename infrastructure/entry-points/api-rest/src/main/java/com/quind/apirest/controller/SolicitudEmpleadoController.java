@@ -3,7 +3,6 @@ package com.quind.apirest.controller;
 import com.quind.model.request.SolicitudEmpleadoRequest;
 import com.quind.model.models.SolicitudEmpleado;
 import com.quind.usecase.SolicitudEmpleadoUseCase;
-import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -17,8 +16,8 @@ public final class SolicitudEmpleadoController {
 
     private final SolicitudEmpleadoUseCase solicitudEmpleadoUseCase;
 
-    @PostMapping
-    public ResponseEntity<SolicitudEmpleado> crearSolicitud(@Valid @RequestBody SolicitudEmpleadoRequest solicitudEmpleadoRequest) {
+    @PostMapping("/post")
+    public ResponseEntity<SolicitudEmpleado> crearSolicitud(@RequestBody SolicitudEmpleadoRequest solicitudEmpleadoRequest) {
         try {
             SolicitudEmpleado nuevaSolicitud = solicitudEmpleadoUseCase.crearSolicitud(solicitudEmpleadoRequest);
             return ResponseEntity.ok(nuevaSolicitud);
