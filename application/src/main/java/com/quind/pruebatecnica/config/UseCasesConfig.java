@@ -1,4 +1,4 @@
-package com.quind.pruebaTecnica.config;
+package com.quind.pruebatecnica.config;
 
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
